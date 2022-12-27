@@ -1,0 +1,569 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\VirtualPOS.ico"
+IDR_VirtualPOSTYPE      ICON                    "res\\VirtualPOSDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  32, 32
+BEGIN
+    BUTTON      ID_SETTING_VIRTUALPOSSETTING
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "Setting"
+    BEGIN
+        MENUITEM "Virtual POS Setting",         ID_SETTING_VIRTUALPOSSETTING
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About VirtualPOS...",        ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 213, 75
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About Virtual EMV POS"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,19,18,16
+    CTEXT           "Virtual EMV POS",IDC_STATIC,31,9,119,8,SS_NOPREFIX
+    CTEXT           "Copyright (C) Verisoft 2006",IDC_STATIC,31,37,119,8
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,16,WS_GROUP
+    CTEXT           "Programmed by Ferhat Mousavi",IDC_STATIC,33,60,119,8,
+                    WS_DISABLED
+    CTEXT           "Version 0.01 beta",IDC_STATIC,31,23,119,8,SS_NOPREFIX
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "VirtualPOS.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+            VALUE "OriginalFilename", "VirtualPOS.exe"
+            VALUE "ProductName", "TODO: <Product name>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Virtual POS\n\nVirtualPOS\n\n\nVirtualPOS.Document\nVirtualPOS.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "VirtualPOS"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SETTING_VIRTUALPOSSETTING 
+                            "Display and modifying vPOS settings settings.\nvPOS Settings"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Turkish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_TRK)
+#ifdef _WIN32
+LANGUAGE LANG_TURKISH, SUBLANG_DEFAULT
+#pragma code_page(1254)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\VirtualPOS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_INFO_FRAME DIALOGEX 0, 0, 171, 771
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Transaction Type:",IDC_STATIC,7,35,60,8
+    COMBOBOX        IDC_COMBO_TRANSTYPE,72,34,92,89,CBS_DROPDOWN | 
+                    CBS_DISABLENOSCROLL | CBS_UPPERCASE | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Current Batch No:",IDC_STATIC,7,114,59,8
+    LTEXT           "Current Seq. No:",IDC_STATIC,7,130,56,8
+    EDITTEXT        IDC_CURRBATCHNO,72,111,92,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_CURRSEQNO,72,128,92,14,ES_AUTOHSCROLL | ES_READONLY
+    RTEXT           "Terminal ID:",IDC_STATIC,20,157,42,8
+    EDITTEXT        IDC_TERMINALID,62,155,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Merchant ID:",IDC_STATIC,19,187,43,8
+    EDITTEXT        IDC_MERCHANTID,62,184,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CTEXT           "Static",IDC_READER_NAME,7,7,157,13,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LIST2,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | 
+                    WS_BORDER | WS_TABSTOP,7,363,157,401
+    CTEXT           "Static",IDC_MESSAGE_BOX1,14,66,143,8
+    GROUPBOX        "",IDC_STATIC,7,56,157,42
+    CTEXT           "Static",IDC_MESSAGE_BOX2,14,76,143,8
+    CTEXT           "Static",IDC_MESSAGE_BOX3,14,85,143,8
+    RTEXT           "Merchant Name:",IDC_STATIC,7,203,55,8
+    EDITTEXT        IDC_MERCHANTNAME,62,200,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Merchant Addr.:",IDC_STATIC,8,219,54,8
+    EDITTEXT        IDC_MERCHANTADDRESS,62,216,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Merchant City:",IDC_STATIC,14,235,48,8
+    EDITTEXT        IDC_MERCHANTCITY,62,232,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    RTEXT           "Floor Limit:",IDC_STATIC,7,265,54,8
+    EDITTEXT        IDC_TERMINALFLOORLIMIT,61,263,102,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_PINPAD_DIALOG DIALOGEX 0, 0, 127, 103
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PIN_EDIT,7,17,56,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,70,82,50,14
+    PUSHBUTTON      "Clear",IDC_CLEAR,70,38,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,17,50,14
+    PUSHBUTTON      "1",IDC_BUTTON_1,7,34,17,14
+    PUSHBUTTON      "2",IDC_BUTTON_2,26,34,17,14
+    PUSHBUTTON      "3",IDC_BUTTON_3,46,34,17,14
+    PUSHBUTTON      "4",IDC_BUTTON_4,7,50,17,14
+    PUSHBUTTON      "5",IDC_BUTTON_5,26,50,17,14
+    PUSHBUTTON      "6",IDC_BUTTON_6,46,50,17,14
+    PUSHBUTTON      "7",IDC_BUTTON_7,7,66,17,14
+    PUSHBUTTON      "8",IDC_BUTTON_8,26,66,17,14
+    PUSHBUTTON      "9",IDC_BUTTON_9,46,66,17,14
+    PUSHBUTTON      "0",IDC_BUTTON_0,26,82,17,14
+    PUSHBUTTON      "Back Space",IDC_BACKSPACE,70,59,50,14
+    LTEXT           "Please Enter Pin",IDC_STATIC,7,7,54,8
+END
+
+IDD_INPUTAMOUNT_DIALOG DIALOGEX 0, 0, 127, 64
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_AMOUNT_EDIT,7,20,113,14,ES_RIGHT | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,70,43,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,7,43,50,14
+    LTEXT           "Please Enter Transaction Amount:",IDC_STATIC,7,7,112,8
+END
+
+IDD_VPSETTING_DIALOG DIALOGEX 0, 0, 239, 205
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Virtual POS Setting"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Apply",IDOK,7,184,142,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,184,50,14
+    GROUPBOX        "",IDC_STATIC,7,20,225,40,WS_DISABLED
+    CONTROL         "PC/SC Reader",IDC_READER_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,14,62,10
+    GROUPBOX        "",IDC_STATIC,7,83,225,93,WS_DISABLED
+    CONTROL         "Explorer Terminal",IDC_TERMINAL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,7,77,74,10
+    COMBOBOX        IDC_COMBO1,102,35,93,42,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Select Active Reader:",IDC_STATIC,27,37,71,8,
+                    WS_DISABLED
+    COMBOBOX        IDC_COMBO2,54,93,53,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "COM Port:",IDC_STATIC,14,94,35,8,WS_DISABLED
+    PUSHBUTTON      "COM Port Configuration",IDC_BUTTON1,115,92,87,14,
+                    WS_DISABLED
+    CONTROL         "Display Messages",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,22,122,73,10
+    CONTROL         "Print Reciept",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,22,136,57,10
+    CONTROL         "Activate Menu",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    WS_DISABLED | WS_TABSTOP,22,150,62,10
+    GROUPBOX        "",IDC_STATIC,15,112,206,55,WS_DISABLED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_INFO_FRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 764
+        HORZGUIDE, 363
+    END
+
+    IDD_PINPAD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_INPUTAMOUNT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_VPSETTING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_INFO_FRAME DLGINIT
+BEGIN
+    IDC_COMBO_TRANSTYPE, 0x403, 5, 0
+0x4153, 0x454c, "\000" 
+    IDC_COMBO_TRANSTYPE, 0x403, 5, 0
+0x4143, 0x4853, "\000" 
+    IDC_COMBO_TRANSTYPE, 0x403, 11, 0
+0x414d, 0x4c49, 0x4f20, 0x4452, 0x5245, "\000" 
+    IDC_COMBO_TRANSTYPE, 0x403, 8, 0
+0x4552, 0x4556, 0x5352, 0x0045, 
+    0
+END
+
+#endif    // Turkish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\VirtualPOS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
